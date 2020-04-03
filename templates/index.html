@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Covid-19 Data Visualisation Challenge</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+</style>
+</head>
+<body>
+<header>
+    <h1 style="text-align:center; font-family:verdana;">
+        Covid19 Data Visualisation Challenge
+    </h1>
+    <h3 style="text-align:center; font-family:verdana;">
+        Initiated by <a href="https://www.linkedin.com/in/saininitinkr/">Nitin Saini</a>
+    </h3>
+</header>
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="chart" id="bargraph1">
+            <script>
+                var graphs = {{plot1 | safe}};
+                Plotly.plot('bargraph1',graphs,{});
+            </script>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="chart" id="bargraph2">
+            <script>
+                var graphs = {{plot2 | safe}};
+                Plotly.plot('bargraph2',graphs,{});
+            </script>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart" id="bargraph3">
+                <script>
+                    var graphs = {{plot3 | safe}};
+                    Plotly.plot('bargraph3',graphs,{});
+                </script>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart" id="bargraph4">
+                <script>
+                    var graphs = {{plot4 | safe}};
+                    Plotly.plot('bargraph4',graphs,{});
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
